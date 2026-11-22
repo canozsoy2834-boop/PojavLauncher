@@ -1,0 +1,21 @@
+name: OzsoyMC Uygula
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tasarimi yerlestir
+        run: |
+          unzip -o ozsoymc_tasarim_paketi.zip -d /tmp/oz
+          cp -r /tmp/oz/ozsoymc/res/. app_pojavlauncher/src/main/res/
+          mkdir -p app_pojavlauncher/src/main/java/com/ozsoymc/launcher
+          cp /tmp/oz/ozsoymc/java/ServerStatusPinger.java app_pojavlauncher/src/main/java/com/ozsoymc/launcher/
+          rm ozsoymc_tasarim_paketi.zip
+          git config user.name "ozsoymc-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A
+          git commit -m "OzsoyMC tasarim paketi eklendi"
+          git push
