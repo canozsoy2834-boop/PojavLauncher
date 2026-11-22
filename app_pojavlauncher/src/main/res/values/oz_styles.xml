@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Oz.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/oz_white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+    <style name="Oz.Body" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/oz_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Oz.Card">
+        <item name="android:background">@drawable/bg_oz_card</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <style name="Oz.Button.Play" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/bg_oz_button_play</item>
+        <item name="android:textColor">@color/oz_white</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">64dp</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+    <style name="Oz.Button.Secondary" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/bg_oz_button_secondary</item>
+        <item name="android:textColor">@color/oz_white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:minHeight">52dp</item>
+    </style>
+    <style name="Oz.Dev.Label">
+        <item name="android:textColor">@color/oz_white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="Oz.Dev.Name">
+        <item name="android:textColor">@color/oz_red</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

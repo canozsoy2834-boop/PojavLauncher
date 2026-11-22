@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kullanim: <include layout="@layout/view_developer_signature"/> -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:padding="8dp">
+    <TextView style="@style/Oz.Dev.Label"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/oz_developer_label"/>
+    <TextView style="@style/Oz.Dev.Name"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/oz_developer_name"/>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ornek ana menu. Pojav'in mevcut view id'lerine baglamak icin kendi id'lerini kullan. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/oz_black">
+
+    <ImageView android:id="@+id/oz_logo" android:layout_width="48dp" android:layout_height="48dp"
+        android:src="@drawable/ic_owl" android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView android:id="@+id/oz_brand" style="@style/Oz.Title"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/oz_brand_name" android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/oz_logo"
+        app:layout_constraintTop_toTopOf="@id/oz_logo" app:layout_constraintBottom_toBottomOf="@id/oz_logo"/>
+
+    <TextView android:id="@+id/oz_selected_version" style="@style/Oz.Body"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/oz_version_none"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toTopOf="@id/oz_play"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <Button android:id="@+id/oz_play" style="@style/Oz.Button.Play"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:text="@string/oz_play" android:layout_marginHorizontal="48dp"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout android:id="@+id/oz_row" android:layout_width="0dp" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginHorizontal="48dp" android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/oz_play"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <Button android:id="@+id/oz_select_version" style="@style/Oz.Button.Secondary"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="@string/oz_select_version" android:layout_marginEnd="8dp"/>
+        <Button android:id="@+id/oz_settings" style="@style/Oz.Button.Secondary"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="@string/oz_settings" android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/oz_server_card" style="@style/Oz.Card"
+        android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@id/oz_signature"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <TextView style="@style/Oz.Title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/oz_server_name" android:textSize="16sp"/>
+        <TextView style="@style/Oz.Body" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/oz_server_address"/>
+        <TextView android:id="@+id/oz_server_status" style="@style/Oz.Body"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/oz_server_status_checking"/>
+        <Button android:id="@+id/oz_server_connect" style="@style/Oz.Button.Secondary"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/oz_server_connect" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <include android:id="@+id/oz_signature" layout="@layout/view_developer_signature"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="oz_app_name">ÖZSOYMC LAUNCHER</string>
+    <string name="oz_brand_name">ÖZSOYMC</string>
+    <string name="oz_developer_label">Geliştirici:</string>
+    <string name="oz_developer_name">TurkSplash</string>
+    <string name="oz_play">OYNA</string>
+    <string name="oz_settings">Ayarlar</string>
+    <string name="oz_downloads">İndirilenler</string>
+    <string name="oz_versions">Sürümler</string>
+    <string name="oz_accounts">Hesaplar</string>
+    <string name="oz_install">Yükle</string>
+    <string name="oz_launch">Başlat</string>
+    <string name="oz_cancel">İptal</string>
+    <string name="oz_delete">Sil</string>
+    <string name="oz_manage">Yönet</string>
+    <string name="oz_select_version">Sürüm Seç</string>
+    <string name="oz_version_none">Sürüm seçilmedi</string>
+    <string name="oz_installed">Kurulu</string>
+    <string name="oz_not_installed">Kurulu değil</string>
+    <string name="oz_download">İndir</string>
+    <string name="oz_download_progress">%1$d%% – %2$s</string>
+    <string name="oz_download_done">Kurulum başarıyla tamamlandı</string>
+    <string name="oz_launching">Minecraft başlatılıyor…</string>
+    <string name="oz_checking_files">Dosyalar kontrol ediliyor…</string>
+    <string name="oz_starting_java">Java başlatılıyor…</string>
+    <string name="oz_error_generic">Bir hata oluştu. Lütfen tekrar deneyin.</string>
+    <string name="oz_error_network">İnternet bağlantısı kurulamadı.</string>
+    <string name="oz_error_storage">Depolama alanı yetersiz.</string>
+    <string name="oz_server_name">ÖzsoyMC Sunucusu</string>
+    <string name="oz_server_address">mc.ozsoymc.com.tr</string>
+    <string name="oz_server_connect">Sunucuya Bağlan</string>
+    <string name="oz_server_status_checking">Durum sorgulanıyor…</string>
+    <string name="oz_server_status_online">Çevrimiçi – %1$d/%2$d oyuncu</string>
+    <string name="oz_server_status_offline">Sunucuya ulaşılamadı</string>
+    <string name="oz_announcements">Duyurular</string>
+    <string name="oz_settings_performance">Performans</string>
+    <string name="oz_settings_java">Java</string>
+    <string name="oz_settings_controls">Kontroller</string>
+    <string name="oz_settings_other">Diğer</string>
+    <string name="oz_about_license">Bu uygulama PojavLauncher (LGPL-3.0) tabanlıdır.</string>
+</resources>

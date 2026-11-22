@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="oz_black">#08080D</color>
+    <color name="oz_black_soft">#11111A</color>
+    <color name="oz_white">#FFFFFF</color>
+    <color name="oz_purple">#9147FF</color>
+    <color name="oz_purple_light">#B98AFF</color>
+    <color name="oz_purple_dark">#5421A6</color>
+    <color name="oz_red">#FF3030</color>
+    <color name="oz_gray">#858595</color>
+    <color name="oz_card_border">#33FFFFFF</color>
+</resources>

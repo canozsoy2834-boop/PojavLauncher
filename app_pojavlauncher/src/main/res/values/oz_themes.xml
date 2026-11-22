@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Pojav'in mevcut temasinin parent'ini kontrol et; farkliysa onu kullan -->
+    <style name="Theme.OzsoyMC" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/oz_purple</item>
+        <item name="colorPrimaryDark">@color/oz_purple_dark</item>
+        <item name="colorAccent">@color/oz_purple_light</item>
+        <item name="colorSecondary">@color/oz_purple</item>
+        <item name="android:windowBackground">@color/oz_black</item>
+        <item name="android:statusBarColor">@color/oz_black</item>
+        <item name="android:navigationBarColor">@color/oz_black</item>
+        <item name="android:textColorPrimary">@color/oz_white</item>
+        <item name="android:textColorSecondary">@color/oz_gray</item>
+        <item name="android:colorBackground">@color/oz_black</item>
+    </style>
+</resources>
